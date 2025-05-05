@@ -41,6 +41,7 @@
       text-shadow: 0 0 8px black;
       text-align: center;
       padding: 20px;
+      z-index: 1; /* Чтобы контент был поверх видео */
     }
 
     .title {
@@ -53,21 +54,12 @@
       transform: translateX(-50%);
       white-space: nowrap;
       z-index: 10;
-      color: #a2d2ff; /* Нежно-голубой цвет */
+      color: #a2d2ff;
       text-shadow: 
         -1px -1px 0 #000, 
          1px -1px 0 #000, 
         -1px  1px 0 #000, 
-         1px  1px 0 #000; /* Тонкий черный контур */
-    }
-
-    @keyframes textFlow {
-      0% {
-        background-position: 0% center;
-      }
-      100% {
-        background-position: 200% center;
-      }
+         1px  1px 0 #000;
     }
 
     .icon1, .icon2 {
@@ -86,7 +78,6 @@
       top: 77%;
       left: 41%;
       transform: translateX(-50%);
-      animation: fadeInPulse 2s forwards, pulse 1.5s infinite;
     }
 
     .icon2 {
@@ -207,22 +198,25 @@
     Ваш браузер не поддерживает видео.
   </video>
 
-  <img src="icons/icon2.jpg" class="icon2" alt="Иконка 2" onclick="window.location.href='https://t.me/vibehackipa'" />
+  <div class="content">
+    <div class="title">All iPA Files</div>
 
-  <div class="title">All iPA Files</div>
-
-  <div class="modal">
-    <div class="modal-box">
-      <h2>vhi1</h2>
-      <p>KEY <span class="key-icon">🔑</span></p>
+    <img src="icons/icon2.jpg" class="icon2" alt="Иконка 2" onclick="window.location.href='https://t.me/vibehackipa'" />
+    
+    <div class="modal">
+      <div class="modal-box">
+        <h2>vhi1</h2>
+        <p>KEY <span class="key-icon">🔑</span></p>
+      </div>
     </div>
-  </div>
 
-  <div class="vip-text">
-    VIP PANEL FREE FIRE
-  </div>
+    <div class="vip-text">
+      VIP PANEL FREE FIRE
+    </div>
 
-  <img src="icons/icon.jpg" class="icon1" alt="Иконка 1" onclick="window.location.href='https://t.me/vibehackipa/1216'" />
+    <img src="icons/icon.jpg" class="icon1" alt="Иконка 1" onclick="window.location.href='https://t.me/vibehackipa/1216'" />
+  </div>
 
 </body>
 </html>
+
